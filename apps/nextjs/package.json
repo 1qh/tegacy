@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "name": "@a/nextjs",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun with-env next build",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "bun with-env next dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "start": "bun with-env next start",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "dependencies": {
+    "@a/api": "*",
+    "@a/auth": "*",
+    "@a/db": "*",
+    "@a/ui": "*",
+    "@a/validators": "*",
+    "@t3-oss/env-nextjs": "latest",
+    "@tanstack/react-query": "^5",
+    "@trpc/client": "next",
+    "@trpc/react-query": "next",
+    "@trpc/server": "next",
+    "geist": "latest",
+    "next": "rc",
+    "react": "rc",
+    "react-dom": "rc",
+    "superjson": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@a/eslint-config": "*",
+    "@a/prettier-config": "*",
+    "@a/tailwind-config": "*",
+    "@a/tsconfig": "*",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "ajv": "^6",
+    "dotenv-cli": "latest",
+    "eslint": "^8",
+    "jiti": "latest",
+    "prettier": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  },
+  "prettier": "@a/prettier-config"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@a/hono-trpc",
+  "exports": {
+    "./*": [
+      "./src/*.tsx",
+      "./src/*.ts"
+    ]
+  }
+}
